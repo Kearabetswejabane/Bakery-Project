@@ -4,10 +4,18 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 body {
   text-align: center;
   font-size: 16px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: radial-gradient(
+    1091px at 106.5% 111.5%,
+    rgb(250, 246, 213) 0.1%,
+    rgb(218, 147, 93) 42.2%,
+    rgb(137, 86, 67) 74.3%,
+    rgb(67, 39, 39) 100.2%
+  );
 }
 p {
   margin-top: 10px;
@@ -15,7 +23,7 @@ p {
   font-family: "Dancing Script", cursive;
 }
 .Paragraph {
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: lighter;
 }
@@ -30,4 +38,13 @@ h2 {
   font-size: 64px;
   font-weight: lighter;
   margin-bottom: 0;
+}
+.btn-branding {
+  background-color: rgb(185, 185, 102);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  font-weight: lighter;
 }
