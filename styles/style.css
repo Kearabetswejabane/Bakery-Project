@@ -1,0 +1,33 @@
+.Cover {
+  text-align: center;
+  background-image: url(image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p {
+  margin-top: 10px;
+  font-size: 26px;
+  font-family: "Dancing Script", cursive;
+}
+.Paragraph {
+  font-size: 14px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 96px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0;
+}
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 64px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
