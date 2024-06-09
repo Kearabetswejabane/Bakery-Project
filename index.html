@@ -27,40 +27,51 @@
     ></script>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body class="Cover">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sweet Dreams</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/About.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Me</a>
-            </li>
-          </ul>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a href="/" title="Homepage">
+          <img
+            src="images/bakery.jpg"
+            class="logo d-none d-md-block"
+            alt="Kearabetswe-logo"
+          />
+          <img
+            src="images/shecodes.jpg"
+            class="logo d-block d-md-none"
+            alt="Kearabetswe-logo"
+          />
+        </a>
+        <ul>
+          <li><a href="/" title="Homepage"> Home</a></li>
+          <li class="active" title="About"><a href="/about.html">About</a></li>
+          <li><a href="/work.html" title="Work">Work</a></li>
+          <li><a href="/contact.html" title="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="heading">
+      <h2>Sweet</h2>
+      <h1>Dreams Bakery</h1>
+      <a href="/About.html" class="btn btn-branding">About Us</a>
+    </div>
+    <p class="text-center m-5">Our Little Treats</p>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="images/croissant.jpg" class="img-fluid rounded" />
+          <p>Croissant</p>
+        </div>
+        <div class="col">
+          <img src="images/sourdough.jpg" class="img-fluid rounded" />
+          <p>Sourdough Bread</p>
+        </div>
+        <div class="col">
+          <img src="images/bun.jpg" class="img-fluid rounded" />
+          <p>Buns</p>
         </div>
       </div>
-    </nav>
-    <p>Welcome to</p>
-    <h2>Sweet</h2>
-    <h1>Dreams Bakery</h1>
-    <a href="/About.html" class="btn btn-branding">About Me</a>
-    <a href="/About.html" class="btn btn-branding">Contact Me</a>
+    </div>
   </body>
 </html>
