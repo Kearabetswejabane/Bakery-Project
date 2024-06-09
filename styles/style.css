@@ -1,3 +1,9 @@
+:root {
+  --branding-color: #aba8ec;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
 .container {
   max-width: 100%;
 }
@@ -25,10 +31,11 @@ nav a {
   max-height: 40px;
 }
 
-.Paragraph {
-  font-size: 12px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: lighter;
+p {
+  font-family: var(--default-font-family);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
 }
 .heading {
   background: linear-gradient(
@@ -53,12 +60,118 @@ h2 {
   font-weight: lighter;
   margin-bottom: 0;
 }
+.col-6 {
+  padding: 0;
+  margin: 0;
+}
 .btn-branding {
-  background-color: rgb(185, 185, 102);
+  background-color: rgb(196, 146, 179);
   border-radius: 4px;
   color: white;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
   font-weight: lighter;
+}
+.btn-branding-outline {
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  border: 1px solid var(--branding-color);
+  color: var(--branding-color);
+}
+.Project-description {
+  padding: 120px 60px;
+}
+.content-container {
+  padding: 60px 20px;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
+}
+.content {
+  margin: 30px;
+}
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.content h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5px;
+  margin: 20px 0 0;
+  font-family: var(--default-font-family);
+}
+.content p {
+  font-size: 14px;
+}
+
+footer {
+  margin: 60px 0;
+}
+footer.contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+footer .contact-box p {
+  margin: 0;
+}
+footer .email-link {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--branding-color);
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .Project-description {
+    padding: 0;
+    text-align: center;
+  }
+  .content {
+    text-align: center;
+    padding: 0;
+  }
+  nav a {
+    font-size: 12px;
+  }
 }
